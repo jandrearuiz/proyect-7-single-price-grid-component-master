@@ -1,0 +1,24 @@
+.head {
+  padding: 25px;
+
+  &__title {
+    color: var(--c-prymary);
+    margin: 0;
+  }
+
+  &__subtitle {
+    color: var(--c-button);
+  }
+
+  &__description {
+    color: var(--c-gray);
+  }
+
+  @media (min-width: $small) {
+    padding: 25px 50px;    
+  }
+
+  @media (min-width: $large) {
+    padding: 45px;
+  }
+}

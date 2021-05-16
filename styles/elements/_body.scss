@@ -1,0 +1,12 @@
+body {
+  font-family: var(--f-font), sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $large) {
+    height: 100vh;
+  }
+}

@@ -1,0 +1,9 @@
+.content {
+  color: var(--c-white);
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $large) {
+    flex-direction: row;
+  }
+}

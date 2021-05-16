@@ -1,0 +1,18 @@
+.button {
+  background: var(--c-button);
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  color: var(--c-white);
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  @media (min-width: $small) {
+    width: 90%;
+  }
+
+  @media (min-width: $large) {
+    width: 50%;
+  }
+}

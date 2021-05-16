@@ -1,0 +1,60 @@
+.card {
+  background: var(--c-prymary);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__price {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  &__frecuently {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--c-lighgray);
+  }
+
+  &__description {
+    margin: 0 0 35px;
+    font-size: 1.1rem;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &:last-child {
+    background: var(--c-secundary);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  @media (min-width: $small) {
+    padding: 25px 50px;    
+  }
+
+  @media (min-width: $large) {
+    width: 50%;
+    padding: 25px 25px 25px 50px;    
+
+    &:first-child {
+      border-bottom-left-radius: 5px;
+    }
+
+    &:last-child {
+      background: var(--c-secundary);
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 5px;
+    }
+  }
+}
